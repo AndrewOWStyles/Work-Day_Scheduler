@@ -70,9 +70,15 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
-
+.sideTime {
+  padding-right: 1rem;
+}
 
 .textarea {
   padding: 0;
 }
 
+p.col-2 {
+  text-align: end;
+  top: 2rem;
+}
