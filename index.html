@@ -32,24 +32,11 @@
       <!-- Timeblocks go here -->
       <!-- start with all feature for 9am first -->
       <!-- edit text area and when save is clicked save text to local storage -->
-      <div class="input-group col-12">
-        <div>
-          <p class="sideTime">9AM</p>
-        </div>
-        <textarea class="col-9" data-time="9am"></textarea>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" data-time="9am" type="button">save</button>
-        </div>
-      </div>
-      <div class="input-group col-12">
-        <div>
-          <p class="sideTime">10AM</p>
-        </div>
-          <textarea class="col-9" data-time="10am"></textarea>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" data-time="10am" >save</i></button>
-        </div>
-      </div>
+      <div class="row" >
+        <p class="col-1"><span class="sideTime" style="opacity:0";>0</span>9AM</p>
+        <textarea id="text9" class="col-9"></textarea>
+        <button id="btn9" class="col-2" type="button" class="btn btn-outline-secondary"></button>
+  </div> 
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
