@@ -61,7 +61,7 @@ $('#btn17').on('click',function(event) {
 if (moment().format('H') == 9) {
     $('textarea').addClass("present");
  
- }else if (moment().format('H')< 9) {
+ }else if (moment().format('H') > 9) {
     $('textarea').addClass("future");
     
 }else{
