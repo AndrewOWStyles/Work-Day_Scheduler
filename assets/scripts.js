@@ -4,47 +4,47 @@ $("#currentDay").text(currentDay)
 
 $('#btn9').on('click',function(event) {
 
-    let $saveText = $(event.target).siblings('textarea').val()
+    let $saveText = $(event.target).siblings('#text10').val()
     localStorage.setItem("btn9",$saveText);
  })
 $('#btn10').on('click',function(event) {
 
-    let $saveText = $(event.target).siblings('textarea').val()
+    let $saveText = $(event.target).siblings('#text10').val()
     localStorage.setItem("btn10",$saveText);
  })
 $('#btn11').on('click',function(event) {
 
-    let $saveText = $(event.target).siblings('textarea').val()
+    let $saveText = $(event.target).siblings('#text11').val()
     localStorage.setItem("btn11",$saveText);
  })
 $('#btn12').on('click',function(event) {
 
-    let $saveText = $(event.target).siblings('textarea').val()
+    let $saveText = $(event.target).siblings('#text12').val()
     localStorage.setItem("btn12",$saveText);
  })
 $('#btn13').on('click',function(event) {
 
-    let $saveText = $(event.target).siblings('textarea').val()
+    let $saveText = $(event.target).siblings('#text13').val()
     localStorage.setItem("btn13",$saveText);
  })
 $('#btn14').on('click',function(event) {
 
-    let $saveText = $(event.target).siblings('textarea').val()
+    let $saveText = $(event.target).siblings('#text14').val()
     localStorage.setItem("btn14",$saveText);
  })
 $('#btn15').on('click',function(event) {
 
-    let $saveText = $(event.target).siblings('textarea').val()
+    let $saveText = $(event.target).siblings('#text15').val()
     localStorage.setItem("btn15",$saveText);
  })
 $('#btn16').on('click',function(event) {
 
-    let $saveText = $(event.target).siblings('textarea').val()
+    let $saveText = $(event.target).siblings('#text16').val()
     localStorage.setItem("btn16",$saveText);
  })
 $('#btn17').on('click',function(event) {
 
-    let $saveText = $(event.target).siblings('textarea').val()
+    let $saveText = $(event.target).siblings('#text17').val()
     localStorage.setItem("btn17",$saveText);
  })
 
@@ -59,84 +59,91 @@ $('#btn17').on('click',function(event) {
  $("#text17").text(localStorage.getItem("btn17"));
 
 if (moment().format('H') == 9) {
-    $('textarea').addClass("present");
+    $("#text9").addClass("present");
  
- }else if (moment().format('H') > 9) {
-    $('textarea').addClass("future");
+ }else if (moment().format('H') < 9) {
+    $("#text9").addClass("future");
     
 }else{
-    $('textarea').addClass("past");
+    $("#text9").addClass("past");
 }
 
 if (moment().format('H') == 10) {
-    $('textarea').addClass("present");
+    $("#text10").addClass("present");
  
  }else if (moment().format('H')< 10) {
-    $('textarea').addClass("future");
+    $('#text10').addClass("future");
     
 }else{
-    $('textarea').addClass("past");
+    $('#text10').addClass("past");
 }
+
 if (moment().format('H') == 11) {
-    $('textarea').addClass("present");
+    $('#text11').addClass("present");
  
  }else if (moment().format('H')< 11) {
-    $('textarea').addClass("future");
+    $('#text11').addClass("future");
     
 }else{
-    $('textarea').addClass("past");
+    $('#text11').addClass("past");
 }
+
 if (moment().format('H') == 12) {
-    $('textarea').addClass("present");
+    $('#text12').addClass("present");
  
  }else if (moment().format('H')< 12) {
-    $('textarea').addClass("future");
+    $('#text12').addClass("future");
     
 }else{
-    $('textarea').addClass("past");
+    $('#text12').addClass("past");
 }
+
 if (moment().format('H') == 13) {
-    $('textarea').addClass("present");
+    $('#text13').addClass("present");
  
  }else if (moment().format('H')< 13) {
-    $('textarea').addClass("future");
+    $('#text13').addClass("future");
     
 }else{
-    $('textarea').addClass("past");
+    $('#text13').addClass("past");
 }
+
 if (moment().format('H') == 14) {
-    $('textarea').addClass("present");
+    $('#text14').addClass("present");
  
  }else if (moment().format('H')< 14) {
-    $('textarea').addClass("future");
+    $('#text14').addClass("future");
     
 }else{
-    $('textarea').addClass("past");
+    $('#text14').addClass("past");
 }
+
 if (moment().format('H') == 15) {
-    $('textarea').addClass("present");
+    $('#text15').addClass("present");
  
  }else if (moment().format('H')< 15) {
-    $('textarea').addClass("future");
+    $('#text15').addClass("future");
     
 }else{
-    $('textarea').addClass("past");
+    $('#text15').addClass("past");
 }
+
 if (moment().format('H') == 16) {
-    $('textarea').addClass("present");
+    $('#text16').addClass("present");
  
  }else if (moment().format('H')< 16) {
-    $('textarea').addClass("future");
+    $('#text16').addClass("future");
     
 }else{
-    $('textarea').addClass("past");
+    $('#text16').addClass("past");
 }
+
 if (moment().format('H') == 17) {
-    $('textarea').addClass("present");
+    $('#text17').addClass("present");
  
  }else if (moment().format('H')< 17) {
-    $('textarea').addClass("future");
+    $('#text17').addClass("future");
     
 }else{
-    $('textarea').addClass("past");
+    $('#text17').addClass("past");
 }
